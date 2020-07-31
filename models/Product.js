@@ -1,9 +1,9 @@
-import mongoose, { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 // enables a generation of id
 import shortid from "shortid";
 const { String, Number } = Mongoose.Schema.Types;
 
-const Product = new mongoose.Schema({
+const ProductSchema = new mongoose.Schema({
   name: { type: String, required: true },
   price: { type: Number, required: true },
   description: { type: String, required: true },
@@ -12,6 +12,6 @@ const Product = new mongoose.Schema({
 });
 
 //if Product model is already available do not need to generate it again
-export default mongoose.models.product ||
+export default mongoose.models.Product ||
   //how to generate model = mongoose.models - references to all created models
-  mongoose.models(Product, ProductSchema);
+  mongoose.model("Product", ProductSchema);
