@@ -1,4 +1,4 @@
-import { Menu, Container, Image } from "semantic-ui-react";
+import { Menu, Container, Image, Icon } from "semantic-ui-react";
 import Link from "next/link";
 
 function Header() {
@@ -13,6 +13,13 @@ function Header() {
               style={{ marginRight: "1em" }}
             />
             ReactReserve
+          </Menu.Item>
+        </Link>
+
+        <Link href="/create">
+          <Menu.Item header>
+            <Icon name="add square" size="large" />
+            Create
           </Menu.Item>
         </Link>
       </Container>
