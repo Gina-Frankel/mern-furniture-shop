@@ -22,6 +22,12 @@ function Header() {
             Create
           </Menu.Item>
         </Link>
+        <Link href="/account">
+          <Menu.Item header>
+            <Icon name="user" size="large" />
+            account
+          </Menu.Item>
+        </Link>
       </Container>
     </Menu>
   );
