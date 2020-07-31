@@ -12,6 +12,7 @@ function Header() {
               src="/static/logo.svg"
               style={{ marginRight: "1em" }}
             />
+            ReactReserve
           </Menu.Item>
         </Link>
       </Container>
