@@ -1,12 +1,20 @@
 import { Menu, Container, Image, Icon } from "semantic-ui-react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 function Header() {
+  const router = useRouter();
+  console.dir(router);
+
+  function isActive(route) {
+    return route === router.pathname;
+  }
+
   return (
     <Menu fluid={true} id="menu" inverted={true}>
       <Container text>
         <Link href="/">
-          <Menu.Item header>
+          <Menu.Item header active={isActive("/")}>
             <Image
               size="mini"
               src="/static/logo.svg"
@@ -17,14 +25,14 @@ function Header() {
         </Link>
 
         <Link href="/create">
-          <Menu.Item header>
+          <Menu.Item header active={isActive("/create")}>
             <Icon name="add square" size="large" />
             Create
           </Menu.Item>
         </Link>
 
         <Link href="/account">
-          <Menu.Item header>
+          <Menu.Item header active={isActive("/account")}>
             <Icon name="user" size="large" />
             account
           </Menu.Item>
