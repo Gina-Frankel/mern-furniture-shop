@@ -22,12 +22,21 @@ function Header() {
             Create
           </Menu.Item>
         </Link>
+
         <Link href="/account">
           <Menu.Item header>
             <Icon name="user" size="large" />
             account
           </Menu.Item>
         </Link>
+
+        <Menu.Item>
+          <Icon name="sign out" size="large" /> Sign out
+        </Menu.Item>
+
+        <Menu.Item>
+          <Icon name="sign in" size="large" /> Sign in
+        </Menu.Item>
       </Container>
     </Menu>
   );
