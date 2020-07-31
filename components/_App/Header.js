@@ -37,6 +37,10 @@ function Header() {
         <Menu.Item>
           <Icon name="sign in" size="large" /> Sign in
         </Menu.Item>
+
+        <Menu.Item>
+          <Icon name="signup" size="large" /> Sign up
+        </Menu.Item>
       </Container>
     </Menu>
   );
