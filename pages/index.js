@@ -14,7 +14,12 @@ function Home(props) {
   // async function getProducts() {
   //   console.log(response.data);
   // }
-  return <>home</>;
+  return (
+    <>
+      home
+      <ProductList products={props.products} />
+    </>
+  );
 }
 
 //method on component
