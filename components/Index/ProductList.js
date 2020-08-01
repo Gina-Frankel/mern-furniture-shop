@@ -18,6 +18,7 @@ function ProductList(props) {
       <Card.Group
         itemsPerRow="3"
         stackable
+        centered
         items={mapProductsToItem(props.products)}
       />
     </>
