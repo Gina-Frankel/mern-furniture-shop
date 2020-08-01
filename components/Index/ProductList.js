@@ -15,7 +15,11 @@ function ProductList(props) {
   }
   return (
     <>
-      <Card.Group items={mapProductsToItem(props.products)} />
+      <Card.Group
+        itemsPerRow="3"
+        stackable
+        items={mapProductsToItem(props.products)}
+      />
     </>
   );
 }
