@@ -4,14 +4,14 @@ import { useRouter } from "next/router";
 
 function Header() {
   const router = useRouter();
-  console.dir(router);
+  // console.dir(router);
 
   function isActive(route) {
     return route === router.pathname;
   }
 
   return (
-    <Menu fluid={true} id="menu" inverted={true}>
+    <Menu stackable fluid={true} id="menu" inverted={true}>
       <Container text>
         <Link href="/">
           <Menu.Item header active={isActive("/")}>
