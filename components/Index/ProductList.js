@@ -10,7 +10,7 @@ function ProductList(props) {
       fluid: true,
       childKey: product._id,
       // Query string
-      href: `/product?_id${product._id}`,
+      href: `/product?_id=${product._id}`,
     }));
   }
   return (
