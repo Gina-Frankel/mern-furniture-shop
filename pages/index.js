@@ -4,7 +4,7 @@ import ProductList from "../components/Index/ProductList";
 
 function Home(props) {
   //can also destructure {products} from props then print products
-  console.log(props.products);
+
   //interacting with the outside world - something where we don't know what the result will be
   // React.useEffect(() => {
   //   getProducts();
