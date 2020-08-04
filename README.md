@@ -1,5 +1,7 @@
 ## Followed the tutorial MERN Stack - The Complete Guide
 
+To run the development server using next use `npm run dev` in your terminal
+
 Technologies
 
 Main dependencies
