@@ -1,4 +1,5 @@
-import { Header, Button } from "semantic-ui-react";
+import { Header, Button, Modal } from "semantic-ui-react";
+import { Model, modelNames } from "mongoose";
 
 function ProductAttributes({ description }) {
   return (
@@ -10,6 +11,21 @@ function ProductAttributes({ description }) {
         color="red"
         content="Delete Product"
       />
+      <Modal open={true} dimmer="blurring">
+        <Modal.Header>Confirm delete</Modal.Header>
+        <Modal.Content>
+          <p>Are you sure you want to delete this product?</p>
+        </Modal.Content>
+        <Modal.Actions>
+          <Button content="cancel" />
+          <Button
+            negative
+            icon="trash"
+            labelPosition="right"
+            content="delete"
+          />
+        </Modal.Actions>
+      </Modal>
     </>
   );
 }
